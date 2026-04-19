@@ -68,7 +68,6 @@ def main():
             result_text = caesar_encrypt(text, args.shift)
         elif args.decrypt:
             result_text = caesar_decrypt(text, args.shift)
-
     elif args.morse:
         if args.encrypt:
             result_text = morse_encrypt(text)
