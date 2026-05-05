@@ -52,7 +52,7 @@ def caesar_encrypt(text: str, shift: int) -> str:
     result = []
     for char in text:
         if char.isalpha():
-            ascii_offset = ord('A') if char.isupper() else ord('a')
+            ascii_offset = ord("A") if char.isupper() else ord("a")
             # Shift character and wrap around the alphabet
             shifted_char = chr((ord(char) - ascii_offset + shift) % 26 + ascii_offset)
             result.append(shifted_char)
